@@ -84,7 +84,6 @@ function createGalleryItems(images) {
 
 const galleryContainer = document.querySelector('.gallery');
 galleryContainer.innerHTML = createGalleryItems(images);
-
 galleryContainer.addEventListener('click', onGalleryItemClick);
 
 function onGalleryItemClick(event) {

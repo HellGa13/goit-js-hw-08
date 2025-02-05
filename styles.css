@@ -13,12 +13,12 @@ body {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 20px 24px;
     justify-content: center;
 }
 
 .gallery-item {
-    max-width: calc((100% - 64px) / 3);
+    max-width: calc((100% - 96px) / 3);
 }
 
 .gallery-link {
@@ -26,15 +26,15 @@ body {
     text-decoration: none;
     color: inherit;
     border: 2px solid transparent;
-    transition: border-color 250ms ease;
-}
-
-.gallery-link:hover {
-    border-color: #2196f3;
 }
 
 .gallery-image {
     width: 100%;
     height: auto;
     display: block;
+    transition: transform 250ms ease-in-out;
+}
+
+.gallery-link:hover .gallery-image {
+    transform: scale(1.05);
 }
